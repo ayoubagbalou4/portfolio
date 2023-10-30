@@ -1,0 +1,75 @@
+.contact {
+    width: 100%;
+    display: flex;
+}
+.left-side-contact , .right-side-contact{
+    width: 45%;
+    margin: 10px auto;
+}
+.right-side-contact {
+    box-shadow: 1px 1px 20px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.right-side-contact h2 {
+    padding: 25px 0;
+}
+.right-side-contact input , .right-side-contact textarea {
+    width: 90%;
+    padding: 15px 10px;
+    margin: 5px auto;
+    border: 0;
+    border: 2px solid #F60909;
+}
+.right-side-contact button {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 10px;
+    background: #F60909;
+    color: #f8f9fa;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+.left-side-contact {
+    margin: auto;
+}
+.left-side-contact .image {
+    width: 100%;
+}
+.left-side-contact .image img {
+    width: 100%;
+}
+.left-side-contact .stat {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.stat .card-stat {
+    border: 2px solid #F60909;
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.stat .card-stat h1 {
+    color: #F60909;
+}
+.stat .card-stat h3{
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 500px){
+    .contact {
+        display: block;
+    }
+    .left-side-contact , .right-side-contact{
+        width: 95%;
+        margin: 20px auto;
+    }
+    .left-side-contact .stat {
+        width: 95%;
+    }
+}

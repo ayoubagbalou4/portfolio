@@ -1,0 +1,58 @@
+header{
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px 25px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    transform: translateX(0%);
+    z-index: 99;
+    background-color: #f8f9fa;
+}
+header h2 span{
+    color: #F60909;
+}
+header .menu a {
+    color: #F60909;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+header .menu a:hover{
+    border-bottom: 3px solid #F60909;
+}
+.icon,.close{
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+    .icon,.close{
+        display: block;
+    }
+    header{
+        width: 95%;
+        margin: 10px auto;
+    }
+    .menu {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #F60909;
+    }
+    header .menu a {
+        color: #f8f9fa;
+        display: block;
+        padding: 15px;
+        text-align: center;
+        margin: 0;
+    }
+    header .menu a:hover{
+        background: #f8f9fa;
+        color: #F60909;
+    }
+}
