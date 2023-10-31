@@ -31,6 +31,9 @@ header .menu a:hover{
 }
 
 @media screen and (max-width: 500px){
+    .menu{
+        display: none;
+    }
     .icon,.close{
         display: block;
     }
@@ -38,20 +41,20 @@ header .menu a:hover{
         width: 95%;
         margin: 10px auto;
     }
-    .menu {
+    .menu-phone {
         position: absolute;
         top: 60px;
         right: 0;
         background: #F60909;
     }
-    header .menu a {
+    header .menu-phone a {
         color: #f8f9fa;
         display: block;
         padding: 15px;
         text-align: center;
         margin: 0;
     }
-    header .menu a:hover{
+    header .menu-phone a:hover{
         background: #f8f9fa;
         color: #F60909;
     }

@@ -14,7 +14,7 @@ const Nav = () => {
               active ? 
               <>
               <h2 onClick={() => setActive(false)} className='close'><AiOutlineClose  color='#F60909'/></h2>
-              <div className="menu">
+              <div className="menu-phone">
                 <a href="#">Home</a>
                 <a href="#">About Us</a>
                 <a href="#">Services</a>
@@ -25,16 +25,16 @@ const Nav = () => {
               :
               <h2 onClick={() => setActive(true)} className='icon'><FiMenu  color='#F60909'/></h2>
             }
+            <div className="menu">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </div>
         </header>
     </div>
   )
 }
 
 export default Nav
-{/* <div className="menu">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Services</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
-            </div> */}
